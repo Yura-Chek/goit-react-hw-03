@@ -1,0 +1,17 @@
+.contactItem {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+button {
+  align-self: flex-end;
+  background-color: #eee;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
