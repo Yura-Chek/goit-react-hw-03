@@ -4,8 +4,8 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Contact({ contacts, contactDelete }) {
   return (
-    <li>
-      <span>
+    <li className={css.item}>
+      <span className={css.span}>
         <IoIosContact />
         {contacts.name}
       </span>
@@ -13,7 +13,12 @@ export default function Contact({ contacts, contactDelete }) {
         <FaPhoneAlt />
         {contacts.number}
       </span>
-      <button onClick={() => contactDelete(contacts.id)}>Delete</button>
+      <button
+        className={css.deletebtn}
+        onClick={() => contactDelete(contacts.id)}
+      >
+        Delete
+      </button>
     </li>
   );
 }

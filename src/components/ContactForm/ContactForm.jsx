@@ -28,13 +28,25 @@ export default function ContactForm({ contactAdd }) {
       }}
       validationSchema={ContactsSchema}
     >
-      <Form>
-        <Field type="text" name="name" placeholder="name" />
+      <Form className={css.form}>
+        <Field
+          className={css.name}
+          type="text"
+          name="name"
+          placeholder="name"
+        />
         <ErrorMessage name="name" component="span" />
-        <Field type="tel" name="tel" placeholder="phone number" />
+        <Field
+          className={css.tel}
+          type="tel"
+          name="tel"
+          placeholder="phone number"
+        />
         <ErrorMessage name="tel" component="span" />
 
-        <button type="submit">Add contact</button>
+        <button className={css.btn} type="submit">
+          Add contact
+        </button>
       </Form>
     </Formik>
   );
